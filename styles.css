@@ -1,0 +1,136 @@
+@font-face {
+  font-family: "proxima_novaregular";
+  src: url("font/proxima_nova_regular-webfont.woff2") format("woff2"),
+    url("font/proxima_nova_regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "playfair_displayitalic";
+  src: url("font/playfairdisplay-italic-variablefont_wght-webfont.woff2")
+      format("woff2"),
+    url("font/playfairdisplay-italic-variablefont_wght-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "georgiaregular";
+  src: url("font/georgia-webfont.woff2") format("woff2"),
+    url("font/georgia-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #464f54;
+}
+
+.wrapper {
+  background: #fff;
+  width: 1060px;
+  margin: 0 auto;
+  padding-left: 60px;
+}
+
+.block {
+  position: relative;
+  margin-top: 150px;
+  border-left: 1px solid #e8eced;
+  padding: 0 60px;
+  padding-top: 160px;
+}
+
+.title {
+  color: #b4b4b4;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-family: "proxima_novaregular", sans-serif;
+}
+
+h1 {
+  font-size: 73px;
+  line-height: 73px;
+  color: #2a2a2a;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: 30px;
+  color: #8f8f8f;
+  line-height: 63px;
+  font-family: "georgiaregular", sans-serif;
+  font-style: italic;
+}
+
+.paragraf {
+  font-size: 27px;
+  line-height: 40px;
+  padding-bottom: 25px;
+  font-family: "georgiaregular", sans-serif;
+}
+
+.label__top {
+  position: absolute;
+  top: -120px;
+  right: -70px;
+  min-height: 80px;
+  min-width: 876px;
+  background: #000;
+  padding: 50px 0 50px 50px;
+  font-family: "Playfair Display", serif;
+}
+
+.label__top::before {
+  content: "TITLE";
+  color: #767676;
+  font-size: 15px;
+}
+
+.label__top div {
+  color: #fff;
+  font-size: 48px;
+  line-height: 80px;
+  border-bottom: 2px solid #303030;
+}
+
+.label__top div:after {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 45px;
+  background: #afb1b3;
+  margin-left: 10px;
+}
+
+.label__bottom {
+  position: absolute;
+  width: 76%;
+  top: 80px;
+  right: -70px;
+  height: 77px;
+  background: #f7bd2c;
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+  cursor: pointer;
+}
+
+.label__item {
+  margin-right: 32px;
+}
+
+.label__item:hover {
+  opacity: 0.5;
+}
